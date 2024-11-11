@@ -1,16 +1,36 @@
-
 /*Option*/
 body {
     font-family: "Roboto", sans-serif;
-    color:#434455;
+    color: #434455;
     font-size: 16px;
-    background-color:#FFFFFF;
+    background-color: #ffffff;
     line-height: 1.5;
 }
 
-ul, ol {list-style-type: none;}
+ul,
+ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
-.subtitle {              /*styles h2*/
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.subtitle {
+    /*styles h2*/
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -20,16 +40,18 @@ ul, ol {list-style-type: none;}
     color: #2e2f42;
 }
 
-
-.title {               /*styles of al h3*/
+.title {
+    /*styles of al h3*/
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-bottom: 8px;
 }
 
-.text {               /* styles of al <p>*/
+.text {
+    /* styles of al <p>*/
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -39,6 +61,31 @@ ul, ol {list-style-type: none;}
 
 /*Styles Header*/
 
+.header {}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
+
+
+}
+
 .nav-link {
     /**/
     text-decoration: none;
@@ -46,118 +93,256 @@ ul, ol {list-style-type: none;}
     letter-spacing: 0.02em;
     font-style: normal;
     color: #2e2f42;
+    display: block;
+    padding: 24px 0;
 }
+
 .nav-link:hover,
 .nav-link:focus {
     color: #404bbf;
 }
 
-.address-link{
-    color: #434455;
-    text-decoration: none;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-}
-.address-link:hover,
-.address-link:focus{
-    color:#404bbf;
-}
-.contacts{font-style: normal}
-
 /* Logo styles */
 
 .logo {
     font-family: "Raleway", sans-serif;
-    color: #4D5AE5;
+    color: #4d5ae5;
     font-weight: 700;
     text-decoration: none;
     font-size: 18px;
     line-height: 1.17;
     letter-spacing: 0.03em;
-    text-transform: uppercase
+    text-transform: uppercase;
+    margin-right: 76px;
+
 }
-.black {color: #2E2F42;} /* header */
-.light {color: #F4F4FD;} /* footer */
+
+.black {
+    color: #2e2f42;
+}
+
+.light {
+    color: #f4f4fd;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
+
+}
+
+.address-link {
+    color: #434455;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    padding: 24px;
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: #404bbf;
+}
+
+.contacts {
+    font-style: normal;
+    align-content: center;
+    margin-left: auto;
+}
+
+
+
+
+
+/* header */
+
+
 
 
 /* Section 1 Title*/
 
+
 .section-title {
-    background-color: #2E2F42;
-    color: #FFFFFF;
-    text-align: center;
-    font-family: inherit;
+    background-color: #2e2f42;
+    padding: 188px 0;
 }
 
-.title-main {         /*Style h1*/
+.title-container {
+    margin: 0 auto;
+    gap: 48px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.title-main {
+    /*Style h1*/
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+    max-width: 496px;
     font-size: 56px;
     font-weight: 700;
-    text-align: center;
     line-height: 1.07;
     letter-spacing: 0.02em;
+
 }
 
 .button {
-    background-color: #4D5AE5;
-    color: #FFFFFF;
+    background-color: #4d5ae5;
+    color: #ffffff;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    min-width: 169px;
+    height: 56px;
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+
 }
 
 .button:hover,
 .button:focus {
-    background-color: #404BBF
+    background-color: #404bbf;
 }
 
 /* Section 2 Benefits */
 
-.section-benefits{}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+}
 
-.benefits-list{background-color: #FFFFFF}
+.section-benefits {
+    padding: 120px 0;
+}
 
-.benefits-item{}
+.benefits-container {
+    display: flex;
+    align-items: center;
+    width: calc((100% * 3 - 24) / 4);
+    justify-content: center;
+}
+
+.benefits-list {
+    background-color: #ffffff;
+    display: flex;
+    gap: 24px;
+}
+
+.benefits-item {
+    width: 264px;
+}
 
 /* Section 3 Team */
 
-.section-team {background-color: #F4F4FD}
-
-.team-list{}
-
-.team-item{
-    background-color: #FFFFFF;
-    text-align: center
+.section-team {
+    background-color: #f4f4fd;
+    width: 100%;
 }
 
-.team-img{}
+.team-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 72px;
+    margin: 0 auto;
+}
 
+.team-subtitle {
+    padding-top: 124px;
+    text-align: center;
+}
 
+.team-list {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 116px;
+}
+
+.team-item {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.team-img {}
+
+.team-text {
+    padding: 32px 16px;
+}
 
 /* Section 4 Portfolio */
 
-.section-portfolio {}
+.section-portfolio {
+    width: 100%;
+}
 
-.portfolio-list{}
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 72px;
+    margin: 0 auto;
+}
 
-.portfolio-item{}
+.portfolio-subtitle {
+    padding-top: 120px;
+    text-align: center;
+}
 
-.portfolio-img{}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding-bottom: 120px;
+}
 
+.portfolio-item {}
 
+.portfolio-img {}
+
+.portfolio-text {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    padding: 32px 16px;
+    width: 360px;
+    height: 120px;
+}
 
 /* Footer */
 
 .page-footer {
-    background-color: #2E2F42;
+    background-color: #2e2f42;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    margin: 0 auto;
 }
 
 .text-footer {
-    color: #F4F4FD;
-    letter-spacing: 0.02em
+    color: #f4f4fd;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 16px;
+    width: 264px;
 }
 
-
-/* */
-
-
+/* footer */

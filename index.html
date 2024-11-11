@@ -17,10 +17,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Tangerine:wght@700&display=swap"
+      rel="stylesheet" />
+    -->
 
     <title>Document</title>
 
@@ -31,24 +30,34 @@
       rel="stylesheet"
       href="https://cdnjs.com/libraries/modern-normalize"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <!--Header section-->
-    <header>
-      <nav>
+    <header class="header">
+      <div class="container header-container">
+      <nav class="nav">
         <a class="logo" href="./index.html">
           Web<span class="black">Studio</span>
         </a>
-        <ul>
+        <ul class="nav-list">
           <li><a href="./index.html" class="nav-link">Studio</a></li>
           <li><a href="" class="nav-link">Contacts</a></li>
           <li><a href="" class="nav-link">Portfolio</a></li>
         </ul>
       </nav>
       <address class="contacts" id="contacts">
-        <ul>
+        <ul class="address-list">
           <li>
             <a class="address-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -61,19 +70,23 @@
           </li>
         </ul>
       </address>
+      </div>
     </header>
 
     <main>
       <!--Title section-->
       <section class="section-title">
-        <h1 class="title-main" id="studio">
+        <div class="title-container container">
+         <h1 class="title-main" id="studio">
           Effective Solutions for Your Business
-        </h1>
-        <button class="button" type="button">Order Service</button>
+         </h1>
+         <button class="button" type="button">Order Service</button>
+        </div>
       </section>
       <!--Benefits section-->
       <section class="section-benefits">
-        <h2 hidden>Benefits</h2>
+        <div class="benefits-container container">
+        <h2 class="visually-hidden">Benefits</h2>
         <ul class="benefits-list">
           <li class="benefits-item">
             <h3 class="title">Strategy</h3>
@@ -91,7 +104,7 @@
             </p>
           </li>
 
-          <li class="ibenefits-item">
+          <li class="benefits-item">
             <h3 class="title">Diligence</h3>
             <p class="text">
               Research and confirm brands that present the strongest digital
@@ -107,10 +120,13 @@
             </p>
           </li>
         </ul>
+        </div>
       </section>
       <!--Team section-->
       <section class="section-team">
-        <h2 class="subtitle" id="#team">Our Team</h2>
+        <div class="team-container container">
+        <h2 class="team-subtitle" id="#team">Our Team</h2>
+
         <ul class="team-list">
           <li class="team-item">
             <img
@@ -120,8 +136,10 @@
               height="260"
               alt="white man with a short beard in a blue shirt"
             />
+            <div class="team-text" >
             <h3 class="title">Mark Guerrero</h3>
             <p class="text">Product Designer</p>
+            </div>
           </li>
 
           <li class="team-item">
@@ -132,9 +150,10 @@
               height="260"
               alt="a young guy smiles widely and looks to the right"
             />
+            <div class="team-text">
             <h3 class="title">Tom Ford</h3>
             <p class="text">Frontend Developer</p>
-          </li>
+            </div>
 
           <li class="team-item">
             <img
@@ -144,8 +163,10 @@
               height="260"
               alt="girl with long hair in a pink sweater"
             />
+            <div class="team-text">
             <h3 class="title">Camila Garcia</h3>
             <p class="text">Marketing</p>
+            </div>
           </li>
 
           <li class="team-item">
@@ -156,14 +177,18 @@
               height="260"
               alt="guy in a gray t-shirt smiling"
             />
+            <div class="team-text">
             <h3 class="title">Daniel Wilson</h3>
             <p class="text">UI Designer</p>
+            </div>
           </li>
         </ul>
+        </div>
       </section>
       <!--Portfolio section-->
       <section class="section-portfolio">
-        <h2 class="subtitle" id="portfolio">Our Portfolio</h2>
+        <div class="portfolio-container container">
+        <h2 class="portfolio-subtitle" id="portfolio">Our Portfolio</h2>
         <ul class="portfolio-list">
           <li class="portfolio-item">
             <img
@@ -173,8 +198,10 @@
               height="300"
               alt="Open page Banking application"
             />
+            <div class="portfolio-text">
             <h3 class="title">Banking App</h3>
             <p class="text">App</p>
+            </div>
           </li>
           <li class="portfolio-item">
             <img
@@ -184,8 +211,10 @@
               height="300"
               alt="Telephone near the terminal cashless payment-"
             />
+            <div class="portfolio-text">
             <h3 class="title">Cashless Payment</h3>
             <p class="text">Marketing</p>
+            </div>
           </li>
           <li class="portfolio-item">
             <img
@@ -195,8 +224,10 @@
               height="300"
               alt="Open laptop and smartphone on the right"
             />
+            <div class="portfolio-text">
             <h3 class="title">Meditation App</h3>
             <p class="text">App</p>
+            </div>
           </li>
           <li class="portfolio-item">
             <img
@@ -206,8 +237,10 @@
               height="300"
               alt="A taxi driver in black gloves keeps his hands on the steering wheel"
             />
+            <div class="portfolio-text">
             <h3 class="title">Taxi Service</h3>
             <p class="text">Marketing</p>
+            </div>
           </li>
           <li class="portfolio-item">
             <img
@@ -217,8 +250,10 @@
               height="300"
               alt="Choosing a theme for a smartphone"
             />
+            <div class="portfolio-text">
             <h3 class="title">Screen Illustrations</h3>
             <p class="text">Design</p>
+            </div>
           </li>
           <li class="portfolio-item">
             <img
@@ -228,15 +263,19 @@
               height="300"
               alt="Young woman in an orange sweater smiling with a phone in her hands"
             />
+            <div class="portfolio-text">
             <h3 class="title">Online Courses</h3>
             <p class="text">Marketing</p>
+            </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
     <!--Footer section-->
     <footer class="page-footer">
+      <div class="footer-container container">
       <a class="logo" href="./index.html">
         Web<span class="light">Studio</span>
       </a>
@@ -244,6 +283,7 @@
         Increase the flow of customers and sales for your business with digital
         marketing & growth solutions.
       </p>
+      </div>
     </footer>
   </body>
 </html>
