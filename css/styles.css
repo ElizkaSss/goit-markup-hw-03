@@ -244,11 +244,11 @@ a {
     background-color: #ffffff;
     display: flex;
     gap: 24px;
-    width: calc((100% - 72) / 4);
 }
 
 .benefits-item {
     width: 100%;
+    width: calc((100% - 72px) / 4);
 }
 
 .benefits-title {
